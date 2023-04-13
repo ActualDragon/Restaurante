@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Font tags-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+  <title>Menu</title>
+</head>
+<header>
+  <!-- Barra de navegación -->
+  <nav id="header" class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <!-- Logo del restaurante -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" id="ImageLogo" class="d-inline-block align-text-center">
+        <span id="MenuPrincipal"></span>
+      </a>
+      <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+        aria-controls="navbarToggle" aria-expanded="false">
+        <span class="navbar-toggler-icon text-end"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <div>Inicio</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">
+              <div>Menu</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservation.html">
+              <div>Reserva</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              <div>Nosotros</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- El telefono aparece en el header en pantallas grandes-->
+      <span class="navbar-text">
+        <li id="telefono" class="d-none d-md-block">
+          <a href="tel:55-8991-0634">
+            <!-- Reemplazar las x con el telefono real-->
+            <span>55-8991-0634</span>
+          </a>
+        </li>
+      </span>
+    </div>
+  </nav>
+</header>
+
+<!-- El telefono aparece en el cuerpo en pantallas medianas y chicas-->
+<div id="llamar" class="d-none d-sm-block d-md-none">
+  <a class="btn" href="tel:55-8991-0634">
+    <!-- Reemplazar las x con el telefono real-->
+    <span class="glyphicon glyphicon-earphone"></span>55-8991-0634
+  </a>
+</div>
+
+<div id="menu-content" class="container">
+  <div class="menu-title">
+    <h2 id="titulo-menu" class="text-center">Nuestro Menu</h2>
+    <h6 class="text-center menu-subtitle">Disfruta las delicias que tenemos que ofrecer</h6>
+    <hr>
+    <!--<div class="text-center"><i class="bi bi-tree">Vegetariano</i>
+          <span class="text-center"><i class="bi bi-fire">Picante</i></span>
+          <span class="text-center"><i class="bi bi-star">Favorito</i></span></div>-->
+  </div>
+
+  <!-- Primera columna del menu -->
+  <section class="row p-3">
+    <div class="col-md-6">
+
+      <section>
+        <!--Seccion entradas-->
+        <h4 class="text-center">Entradas</h4>
+        <hr>
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-10">
+              <h3 class="menu-item-title">Mezcla de quesos mexicanos (Tenosique y Chihuahua) con salsa de piloncillo y
+                chiles ahumados.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Ceviche blanco de pescado estilo Frontera con tostones de plátano macho.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Ostiones al tapesco</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Tamales de chipilín y chanchamitos</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Dzikilpak</h3>
+              <p id="menu-item-details"><i class="bi bi-dot"></i>&emsp;Crujientes tropicales (malanga, plátano macho
+                verde)</p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Aguachile de camarón estilo Sinaloa</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Dzik de venado</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Tacos de ropa vieja con mantequilla de tuétano.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Chile ancho relleno de minilla de pescado estilo Veracruz sobre salsa de
+                frijol.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Sopecitos de cochinita pibil.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Empanadas de plátano rellena de queso de cabra y mole.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- Seccion Ensaladas-->
+        <h4 class="text-center">Ensaladas</h4>
+        <hr>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Ensalada de ayocotes ahumados con quelites y vinagreta de chile ancho.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Camotes confitados, jocoque, macha y verdolagas.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Mix de lechugas con fruta de temporada y queso doble crema de Tabasco</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Texturas de calabaza criolla con quelites.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Segunda columna del menu -->
+    <div class="col-md-6">
+      <section>
+        <!-- Seccion Sopas y Caldos-->
+        <h4 class="text-center">Sopas y Caldos</h4>
+        <hr>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Chilpachole de jaiba.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Caldo de pescado con plátano verde</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Sopa pozolera verde de pollo</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Sopa vegetariana</h3>
+              <p id="menu-item-details"><i class="bi bi-dot"></i>&emsp;De temporada</p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- Seccion Principales-->
+        <h4 class="text-center">Principales</h4>
+        <hr>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Pescado a la veracruzana acompañado de arroz blanco</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Pulpo a la talla, arroz con chipilín y jengibre</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Tortilla rellena de queso y camarón al mojo de ajo</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Pan de cazón</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Puchero tabasqueño</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Cazuela de ubre para taquear</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Pollito de leche al pibil</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Corte de res con esquites.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Lechón, jus, papa cambray y alioli de habanero.</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <!-- Seccion Postres-->
+        <h4 class="text-center">Postres</h4>
+        <hr>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Merengue con texturas de fruta de temporada</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Pastel de 3 leches con cajeta</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Natilla y arroz con leche</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-tile col-md-12">
+          <div class="row align-items-start">
+            <div class="menu-item-description col-sm-11">
+              <h3 class="menu-item-title">Tarta de chocolate Tabasqueño</h3>
+              <p id="menu-item-details"></p> <!-- Descripcion del platillo-->
+            </div>
+            <div class="col-sm-2 float-start">
+              <!--<i class="bi bi-dot"></i> Icono para productos normales-->
+              <div class="menu-item-price"></div> <!-- Precio-->
+              <div class="menu-item-photo">
+                <!-- Aqui colocar la imagen del producto si lo desea -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</div>
+
+<footer class="panel-footer">
+  <div class="container">
+    <div class="row">
+      <section id="horas" class="col-sm-5 text-center">
+        <span>Horario:</span><br>
+        Lun-Mié: 13:00 - 00:00<br>
+        Jue-Sab: 13:00 - 1:00<br>
+        Dom: 13:00 - 19:00
+        <hr class="visible-xs">
+      </section>
+      <section id="direccion" class="col-sm-3">
+        <span>Dirección:</span><br>
+        Durango 359, Roma Norte, CDMX<br>
+        <hr class="visible-xs">
+      </section>
+      <section id="testimonials" class="col-sm-4">
+        <p>"La nueva experiencia culinaria que combina sustentabilidad, cultura y excelencia gastronómica."</p>
+        <div id="social_media">
+          <a href="https://www.facebook.com/manglar.cdmx" target="_blank" class="btn btn-link" role="button">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/manglar_cdmx/" target="_blank" class="btn btn-link" role="button">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="text-center">&copy; Manglar CDMX, 2022 / Derechos Reservados</div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

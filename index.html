@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Tags Redes Sociales-->
+  <link rel="canonical" href="" />
+  <meta name="Manglar"
+    content="Conoce el nuevo concepto que combina la excelencia culinaria regional con la sustentabilidad" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Mi Restaurante" />
+  <meta property="og:type" content="restaurante" />
+  <meta property="og:url" content="" />
+  <meta property="og:description"
+    content="Conoce el nuevo concepto que combina la excelencia culinaria regional con la sustentabilidad" />
+  <meta property="og:image" content="images/main3.jpg" />
+  <meta name="twitter:card"
+    content="Conoce el nuevo concepto que combina la excelencia culinaria regional con la sustentabilidad" />
+
+  <title>Manglar</title>
+</head>
+
+<body>
+  <header>
+    <!-- Barra de navegación -->
+    <nav id="header" class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <!-- Logo del restaurante -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" id="ImageLogo" class="d-inline-block align-text-center">
+          <span id="MenuPrincipal"></span>
+        </a>
+        <!-- Toggler para cuando se esconde el menu de opciones-->
+        <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+          aria-controls="navbarToggle" aria-expanded="false">
+          <span class="navbar-toggler-icon text-end"></span>
+        </button>
+        <!--Opciones de la barra de navegacion-->
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <div>Inicio</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">
+                <div>Menu</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">
+                <div>Reserva</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                <div>Nosotros</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- El telefono aparece en el header en pantallas grandes-->
+        <span class="navbar-text">
+          <li id="telefono" class="d-none d-md-block">
+            <a href="tel:55-8991-0634">
+              <span>55-8991-0634</span></a>
+          </li>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- El telefono aparece en el cuerpo en pantallas medianas y chicas-->
+  <div id="llamar" class="d-none d-sm-block d-md-none">
+    <a class="btn" href="tel:55-8991-0634">
+      <!-- Reemplazar las x con el telefono real-->
+      <span class="glyphicon glyphicon-earphone"></span>55-8991-0634
+    </a>
+  </div>
+
+  <!-- Carrusel de imagenes-->
+  <div id="main-content" class="container jumbotron">
+    <div class="row justify-content-center">
+      <div id="imagenes_carrusel" class="carousel slide col-md-12 " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/main1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/main2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/main3.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imagenes_carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imagenes_carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="iconos_home" class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <a href="menu.html">
+        <div id="icono_menu"><span></span></div>
+      </a>
+    </div>
+    <div class="col-md-5 col-sm-6 col-xs-12 align-middle">
+      <h2 class="text-center"><a href="menu.html">MENU</a></h2>
+      <hr>
+      <h3 id="menu-titulo"><span>Conoce los platillos que tenemos para ti</span></h3>
+      <p id="menu-texto"> Aromas, notas y sensaciones completamente mexicanas que evocan y envuelven en un arrullo
+        tropical.
+        Manglar retoma platillos típicos de localidades de toda la República mexicana, dándoles un giro contemporáneo y
+        de autor.
+        <br>Cada uno de nuestros platillos cuenta una historia de nuestro país.</br>
+      </p>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <a href="nosotros.html">
+        <div id="icono_nosotros"><span></span></div>
+      </a>
+    </div>
+    <div class="col-md-5 col-sm-6 col-xs-12 align-middle">
+      <h2 class="text-center"><a href="about.html">NOSOTROS</a></h2>
+      <hr>
+      <h3 id="menu-titulo"><span>¡Conócenos!</span></h3>
+      <p id="menu-texto"> Conoce el nuevo concepto que combina la excelencia culinaria regional con la sustentabilidad
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <a href="reservation.html">
+        <div id="icono_reservacion"><span>Reserva tu mesa</span></div>
+      </a>
+    </div>
+  </div>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="horas" class="col-sm-5 text-center">
+          <span>Horario:</span><br>
+          Lun-Mié: 13:00 - 00:00<br>
+          Jue-Sab: 13:00 - 1:00<br>
+          Dom: 13:00 - 19:00
+          <hr class="visible-xs">
+        </section>
+        <section id="direccion" class="col-sm-3">
+          <span>Dirección:</span><br>
+          Durango 359, Roma Norte, CDMX<br>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"La nueva experiencia culinaria que combina sustentabilidad, cultura y excelencia gastronómica."</p>
+          <div id="social_media">
+            <a href="https://www.facebook.com/manglar.cdmx" target="_blank" class="btn btn-link" role="button">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/manglar_cdmx/" target="_blank" class="btn btn-link" role="button">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="text-center">&copy; Manglar CDMX, 2022 / Derechos Reservados</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

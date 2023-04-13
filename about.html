@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Font tags -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+  <title>Nosotros</title>
+</head>
+
+<body>
+  <header>
+    <!-- Barra de navegación -->
+    <nav id="header" class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <!-- Logo del restaurante -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" id="ImageLogo" class="d-inline-block align-text-center">
+          <span id="MenuPrincipal"></span>
+        </a>
+        <button class="navbar-toggler text-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
+          aria-controls="navbarToggle" aria-expanded="false">
+          <span class="navbar-toggler-icon text-end"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <div>Inicio</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">
+                <div>Menu</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">
+                <div>Reserva</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                <div>Nosotros</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- El telefono aparece en el header en pantallas grandes-->
+        <span class="navbar-text">
+          <li id="telefono" class="d-none d-md-block">
+            <a href="tel:55-8991-0634">
+              <!-- Reemplazar las x con el telefono real-->
+              <span>55-8991-0634</span>
+            </a>
+          </li>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- El telefono aparece en el cuerpo en pantallas medianas y chicas-->
+  <div id="llamar" class="d-none d-sm-block d-md-none">
+    <a class="btn" href="tel:55-8991-0634">
+      <!-- Reemplazar las x con el telefono real-->
+      <span class="glyphicon glyphicon-earphone"></span>55-8991-0634
+    </a>
+  </div>
+
+  <div id="nosotros-content" class="container">
+    <h2 id="menu-categories-title" class="text-center">Acerca de Nosotros</h2>
+    <hr>
+    <p class="text-center">
+      Manglar representa un nuevo concepto que combina la cultura, la sustentabilidad y la excelencia gastronómica.
+      Cada uno de nuestros platos ha sido cuidadosamente curado por el chef Ramón Torres, quien toma diversos platillos
+      típicos de localidades en las que predomina este ecosistema tan diverso y, les da un giro contemporáneo y de
+      autor.
+      Déjanos llevarte desde Tampico hasta la Península de Yucatán a través de sabores, aromas y sensaciones que te
+      envolverán en un arrullo tropical.
+    </p>
+    <div>
+      <img src="images/about.jpg" class="img-fluid rounded mx-auto d-block">
+    </div>
+  </div>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="horas" class="col-sm-5 text-center">
+          <span>Horario:</span><br>
+          Lun-Mié: 13:00 - 00:00<br>
+          Jue-Sab: 13:00 - 1:00<br>
+          Dom: 13:00 - 19:00
+          <hr class="visible-xs">
+        </section>
+        <section id="direccion" class="col-sm-3">
+          <span>Dirección:</span><br>
+          Durango 359, Roma Norte, CDMX<br>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"La nueva experiencia culinaria que combina sustentabilidad, cultura y excelencia gastronómica."</p>
+          <div id="social_media">
+            <a href="https://www.facebook.com/manglar.cdmx" target="_blank" class="btn btn-link" role="button">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/manglar_cdmx/" target="_blank" class="btn btn-link" role="button">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="text-center">&copy; Manglar CDMX, 2022 / Derechos Reservados</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
