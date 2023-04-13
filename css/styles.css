@@ -1,0 +1,381 @@
+:root { /* Variables modificables */
+    --main_background: rgba(204, 249, 227, 0.17);
+    --header_background: #55886f;
+    
+    --font_color: #121212;
+    --body_size: 16px;
+    --font_family: 'Oswald', serif;
+    
+    --nav_color: #657473; /* Color de los elementos en la barra de opciones */
+    --title_color: #697978;
+    --title_font: 'Lora', serif;
+    
+    --item_border: #697978; /* Borde para los elementos de la pagina y el menu */
+    --item_background: #697978; /* Fondo para los iconos de las diferentes paginas */
+    --item_color: #ffffff; /* Color del texto de los iconos de las diferentes paginas */
+    
+    --menu_background: url('../Images/menu_icon.jpg'); /* Fondo para el icono de la pagina menu */
+    --about_background: url('../Images/about_icon.jpg'); /* Fondo para el icono de la pagina nosotros */
+    --reserva_background: url('../Images/reservation_icon.jpg'); /* Fondo para el icono de la pagina de reservaciones*/
+  
+    --hover_shadow: #697978; /* Sombreado del icono cuando pasa el mouse */
+    --hover_color: #55886f; /* Color del texto de link cuando pasa el mouse */
+    --clicked_color: #697978; /* Color del texto de link cuando ya fue picado */
+  
+    --footer_color: #55886f; 
+    --footer_text: #ffffff;
+  
+    --menu_item: 16px; /* Tamano de los elementos del menu */
+    --menu_desc: 13px; /* Tamano de la descripcion del menu */
+  }
+  
+  body{
+      font-size: var(--body_size);
+      color: var(--font_color);
+      background-color: var(--main_background);
+      font-family: var(--font_family);
+  }
+  
+  #header {
+      background-color: var(--header_background);
+      border-radius: 0;
+      border: 0;
+  }
+  
+  /* Comportamiento responsivo */
+  @media (min-width: 960px){
+      .navbar-brand {
+          zoom: 100%;
+      }
+  }
+  
+  @media (max-width: 960px){
+      .navbar-brand {
+          zoom: 50%;
+      }
+  }
+  
+  /*Header */
+  .nav-link div {
+      color: var(--nav_link_color);
+      font-family: var(--font_family);
+  }
+  #ImageLogo {
+    width: 250px; 
+    height: 50px; 
+    object-fit: cover;
+  }
+  #MenuPrincipal { /*Nombre principal (del restaurante) */
+      font-size: 1.5em;
+      font-family: var(--title_font);
+      padding-top: 25px;
+      color: var(--title_color);
+      font-weight: bold;
+      text-shadow: 1px 1px 1px #222;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: .75;
+  }
+  #telefono {
+      margin-top: 5px;
+    }
+    #telefono a { /* Telefono */
+      text-align: center;
+      padding-bottom: 0;
+    }
+    #iconos_home {
+      justify-content: center;
+      padding-top: 25px;
+      padding-left: 10px;
+    }
+    #social_media > a > i {
+      color: var(--footer_text);
+    }
+    #menu-titulo, #nosotros-titulo {
+      font-size: 1.1em;
+    }
+    #menu-texto, #nosotros-texto {
+      font-size: .9em;
+      font-style: italic;
+    }
+  /* End Header */
+  
+  /* Home */
+  #icono_menu, #icono_reservacion, #icono_nosotros, #icono-mapa {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid var(--item_border);
+    overflow: hidden;
+    object-position: 10% 100%;
+  }
+  #icono_menu:hover, #icono_reservacion:hover, #icono_nosotros:hover, #icono-mapa:hover {
+    box-shadow: 0 1px 5px 1px var(--hover_shadow);
+  }
+  #icono_menu {
+    background-image: var(--menu_background);
+    background-size: cover;
+  }
+  #icono_reservacion {
+    background-image: var(--reserva_background);
+    background-size: cover;
+  }
+  #icono_nosotros {
+    background-image: var(--about_background);
+    background-size: cover;
+  }
+  #icono_menu span, #icono_reservacion span, #icono_nosotros span, #icono-mapa span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: var(--item_background);
+    color: var(--item_color);
+    opacity: .8;
+  }
+  h2 > a {
+    color: var(--font_color);
+    text-decoration: none;
+  }
+  h2 > a:hover {
+    color: var(--hover_color);
+    text-decoration: none;
+  }
+  h2 > a:visited {
+    color: var(--clicked_color);
+    text-decoration: none;
+  }
+  #imagenes_carrusel {
+    max-width: 1000px;
+    max-height: 600px;
+    overflow: hidden;
+    object-position: 10% 70%;
+    margin-top: 10px; 
+  }
+  
+  /* End Home */
+  
+  /* Footer */
+  .panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: var(--footer_color);
+    border-top: 0;
+    color: var(--footer_text);
+  }
+  .panel-footer div.row {
+    margin-bottom: 35px;
+  }
+  #hours, #address {
+    line-height: 2;
+  }
+  #hours > span, #address > span {
+    font-size: 1.3em;
+  }
+  #address p {
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  #testimonials {
+    font-style: italic;
+  }
+  #testimonials p:nth-child(2) {
+    margin-top: 25px;
+  }
+  /* End Footer */
+  
+  /* Menu */
+  body.menu {
+    font-size: var(--menu_desc);
+    color: var(--font_color);
+    background-color: var(--main_background);
+    font-family: var(--font_family);
+  }
+  #titulo-menu {
+    margin-top: 15px;
+  }
+  #titulo-menu + hr {
+    margin-bottom: 25px;
+  }
+  #menu-content >div > div> span{
+    margin-left: 10px;
+  }
+  .menu-item-title {
+    font-size: var(--menu_item);
+  }
+  .menu-item-photo > img {
+    height: 75px;
+    width: 75px;
+    padding-left: 15px;
+  }
+  #menu-item-details {
+    font-size: var(--menu_desc);
+  }
+  /* End Menu */
+  
+  /* Nosotros */
+  #menu-categories-title {
+    margin-top: 10px;
+  }
+  #nosotros-content {
+    height: auto;
+    max-width: 100%;
+  }
+  #nosotros-content > p {
+    margin-bottom: 15px;
+  }
+  #grupo-content {
+    height: auto;
+    max-width: 100%;
+    padding-top: 25px;
+  }
+  /* End Nosotros */
+  
+  /* Reserva */
+  #titulo-reserva {
+    margin-top: 10px;
+  }
+  #titulo-reserva + hr {
+    margin-bottom: 25px;
+  }
+  #reserva-image {
+    height: auto;
+    max-width: 100%;
+    padding-top: 25px;
+  }
+  #reserva-categories-title + div {
+    margin-bottom: 25px;
+  }
+  #Time:invalid {
+    content: "El restaurante no se encuentra abierto en este horario"
+  }
+  .btn-light, .btn-light.disabled, .btn-light:hover, .btn-light:active, .btn-light:visited {
+    background-color: var(--header_background) !important;
+}
+  /* End Reserva */
+  
+  /* Home */
+  .container .jumbotron {
+    box-shadow: 0 0 50px var(--item_background);
+    border: 2px solid var(--item_background);
+  }
+  
+  /* End Home */
+  
+  /********** Responsividad para dispositivos grandes **********/
+  @media (min-width: 1200px) {
+    .container .jumbotron {
+      background: no-repeat;
+      height: 730px;
+    }
+    #nosotros-content {
+      max-width: 800px;
+    }
+    #grupo-content {
+      max-width: 800px;
+    }
+    #reserva-image {
+      max-width: 100%;
+      max-height: 50%;
+    }
+  }
+  
+  /********** Responsividad para dispositivos medianos **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+      background: no-repeat;
+      width: 100px;
+      height: 100px;
+      margin: 5px 5px 5px 0;
+    }
+    .container .jumbotron {
+      background: no-repeat;
+      height: 530px;
+      margin-bottom: 10;
+    }
+    #nosotros-content {
+      max-width: 400px;
+    }
+    #grupo-content {
+      max-width: 400px;
+    }
+    #reserva-image {
+      max-width: 400px;
+      max-height: 100px;
+    }
+    #imagenes_carrusel {
+      max-width: 100%;
+      max-height: 500px;
+      overflow: hidden;
+      object-position: 10% 70%;
+      margin-top: 10px; 
+    }
+  }
+  
+  /********** Responsividad dispositivos pequeños **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Home */
+    .container .jumbotron {
+      background: no-repeat;
+      height: 400px;
+    }
+    /* End Home */
+    #imagenes_carrusel {
+      max-width: 1000px;
+      max-height: 450px;
+      overflow: hidden;
+      object-position: 10% 70%;
+      margin-top: 10px; 
+    }
+  }
+
+  /********** Responsividad dispositivos xtra chicos **********/
+  @media (min-width: 600px) and (max-width: 767px) {
+    #imagenes_carrusel {
+      max-width: 100%;
+      max-height: 300px;
+      overflow: hidden;
+      object-position: 10% 70%;
+      margin-top: 10px; 
+    }
+  }
+
+  @media (max-width: 500px) {
+    #imagenes_carrusel {
+      max-width: 100%;
+      max-height: 225px;
+      overflow: hidden;
+      object-position: 10% 70%;
+      margin-top: 10px; 
+    }
+    #icono_menu, #icono_reservacion, #icono_nosotros, #icono-mapa {
+      height: 250px;
+      width: 90%;
+      margin-bottom: 15px;
+      margin-left: 15px;
+      position: relative;
+      border: 2px solid var(--item_border);
+      overflow: hidden;
+      object-position: 10% 100%;
+  }
+}
+  #llamar > a {
+    font-size: 1em;
+    display: block;
+    margin: 0 110px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: var(--header_background);
+    text-align: center;
+    }
+      
+      #h_atencion > div {
+        font-size: 0.5em;
+      }
